@@ -1,0 +1,43 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+.mark-form-url {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mark-form-url li {
+  list-style: none;
+  padding: 0px 10px;
+}
+
+.mark-form-url li:first-child {
+  width: 50%;
+}
+
+.all-data-list {
+  list-style: none;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.all-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.all-data-list-li {
+  padding: 5px 20px;
+}
+

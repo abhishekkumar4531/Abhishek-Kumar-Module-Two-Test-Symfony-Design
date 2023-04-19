@@ -1,0 +1,32 @@
+<div class = "mt-3">
+  {% if message is defined %}
+    {{ message }}
+  {% endif %}
+  {% for item in addedList %}
+    <div>
+      <ul class="mark-form-url">
+        <li>
+          {{item.itemValue}}
+        </li>
+        <li>
+          <button class="editBtn btn btn-primary" id = "edit" name = "edit"
+          data-id = "{{item.id}}" data-value="{{item.itemValue}}">
+            <span class="bi bi-pencil"></span>
+          </button>
+        </li>
+        <li>
+          <button class="deleteBtn btn btn-danger" id = "delete" name = "delete"
+          data-id = "{{item.id}}">
+            <span class="bi bi-trash"></span>
+          </button>
+        </li>
+        <li>
+          <button class="markedBtn btn btn-primary" id = "marked" name = "marked"
+          data-id = "{{item.id}}" data-value = "{{item.itemValue}}">
+            <span class="bi bi-check-circle-fill"></span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  {% endfor %}
+</div>
