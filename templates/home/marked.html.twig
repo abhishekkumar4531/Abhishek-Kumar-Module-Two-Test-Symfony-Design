@@ -1,0 +1,20 @@
+<div class = "mt-3">
+  {% if message is defined %}
+    {{ message }}
+  {% endif %}
+  {% for item in markedList %}
+    <div>
+      <ul class="mark-form-url">
+        <li>
+          {{item.itemValue}}
+        </li>
+        <li>
+          <button class="deleteMarkedBtn btn btn-danger" id = "deleteMarkedBtn"
+          name = "delete" data-id = "{{item.id}}">
+            <span class="bi bi-trash"></span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  {% endfor %}
+</div>
